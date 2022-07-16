@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "strict": true,
+    "noImplicitOverride": true,
+    "target": "es6",
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@common/assets/*": ["./src/common/assets/*"],
+      "@common/components": ["./src/common/components"],
+      "@common/config/*": ["./src/common/config/*"],
+      "@common/constants/*": ["./src/common/constants/*"],
+      "@common/hooks/*": ["./src/common/hooks/*"],
+      "@common/mocks/*": ["./src/common/mocks/*"],
+      "@common/types/*": ["./src/common/types/*"],
+      "@common/utils/*": ["./src/common/utils/*"]
+    }
+  },
+  "include": [
+    "src",
+    "webpack",
+    "mock-middleware",
+    ".eslintrc.js",
+    "mock-server",
+    "jest.config.ts",
+    "jest-setup.ts",
+    "jest"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "resolveJsonModule": true
+    }
+  }
+}
